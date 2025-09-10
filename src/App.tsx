@@ -2,6 +2,8 @@ import React, {useEffect, useState} from 'react';
 import Navbar from './components/NavBar';
 import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
+import FloatingCards from './components/FloatingCard';
+import InfoFooter from './components/InfoFooter';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,28 +53,30 @@ function App() {
         <section id="home">
           <VideoBackgroundLanding />
         </section>
-
+        
         {/* Scroll Target Sections */}
         <section
           id="viewmenu"
           className="h-screen flex items-center justify-center bg-white text-black"
         >
-          <h2 className="text-4xl">Thing1 Section</h2>
-        </section>
-
-        <section
-          id="reservenow"
-          className="h-screen flex items-center justify-center bg-gray-100 text-black"
-        >
-          <h2 className="text-4xl">Thing2 Section</h2>
-        </section>
+          <div className="flex flex-col items-center justify-center bg-gray-500">
+            <div className="text-4xl font-hans text-nomu-orange">Our Mission</div>
+            <div className="text-3xl max-w-3xl font-din text-nomu-red">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
+            <div className="text-2xl max-w-3xl font-din text-nomu-red">This is din font, nomu red</div>
+            <div className="text-2xl max-w-3xl font-nomu text-nomu-orange">This is nomu font, nomu orange</div>
+            <div className="text-2xl max-w-3xl font-hans text-nomu-black">This is hans font, nomu black</div>
+            <div className="text-2xl max-w-3xl text-nomu-salmon">This is default font, nomu salmon</div>
+          </div>
+          </section>
 
         <section
           id="ordernow"
           className="h-screen flex items-center justify-center bg-gray-200 text-black"
         >
-          <h2 className="text-4xl">Thing3 Section</h2>
+          <FloatingCards />
         </section>
+        <InfoFooter />
+        
       </main>
 
 

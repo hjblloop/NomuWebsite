@@ -2,3 +2,75 @@
 html {
   scroll-behavior: smooth;
 }
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@font-face {
+  font-family: 'DIN Next W1G';
+  src: url('/fonts/DINNextW1G-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hans Sans SC';
+  src: url('/fonts/SourceHanSansSC-Bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nomu';
+  src: url('/fonts/5-文道润隶体WDRLT.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+@layer utilities {
+  .delay-0    { animation-delay: 0s; }
+  .delay-100  { animation-delay: 0.1s; }
+  .delay-200  { animation-delay: 0.2s; }
+  .delay-300  { animation-delay: 0.4s; }
+  .text-nomu-red {
+    color: #FF3A00
+  }
+  .text-nomu-orange {
+    color: #FFC864
+  }
+  .text-nomu-black {
+    color: #332D25
+  }
+  .text-nomu-salmon {
+    color: #F7D0BF
+  }
+  .bg-nomu-red {
+    background-color: #FF3A00
+  }
+  .bg-nomu-orange {
+    background-color: #FFC864
+  }
+  .bg-nomu-black {
+    background-color: #332D25
+  }
+  .bg-nomu-salmon {
+    background-color: #F7D0BF
+  }
+  .font-din {
+    font-family: 'DIN Next W1G', sans-serif;
+  }
+  .font-hans {
+    font-family: 'Hans Sans SC', sans-serif;
+  }
+  .font-nomu {
+    font-family: 'Nomu', sans-serif;
+  }
+}
