@@ -28,6 +28,7 @@ function App() {
         <title>Delicious Japanese Food | Best Restaurant in Jacksonville, FL</title>
         <meta name="description" content="A modern Japanese izakaya focused on food, drinks, and late-night hospitality." />
         <meta name="keywords" content="Japanese Food, Jacksonville restaurant, sushi, izakaya, dine-in, takeout" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Nomu Izakaya" />
         <meta property="og:description" content="Come try our japanese food!" />
         <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
@@ -49,33 +50,29 @@ function App() {
       )}
 
       <main>
-        {/* Hero Section with Background Video */}
         <section id="home">
           <VideoBackgroundLanding />
         </section>
         
-        {/* Scroll Target Sections */}
-        <section
-          id="viewmenu"
-          className="h-screen flex items-center justify-center bg-white text-black"
-        >
-          <div className="flex flex-col items-center justify-center bg-gray-500">
-            <div className="text-4xl font-hans text-nomu-orange">Our Mission</div>
-            <div className="text-3xl max-w-3xl font-din text-nomu-red">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
-            <div className="text-2xl max-w-3xl font-din text-nomu-red">This is din font, nomu red</div>
-            <div className="text-2xl max-w-3xl font-nomu text-nomu-orange">This is nomu font, nomu orange</div>
-            <div className="text-2xl max-w-3xl font-hans text-nomu-black">This is hans font, nomu black</div>
-            <div className="text-2xl max-w-3xl text-nomu-salmon">This is default font, nomu salmon</div>
+          <div
+            className="relative z-0 w-screen bg-white min-h-screen flex items-center justify-center text-black px-4"
+          >
+            <div className="flex flex-col items-center justify-center w-full max-w-4xl sm:max-w-4xl space-y-6 bg-gray-500">
+              <div className="text-3xl sm:text-4xl font-hans text-nomu-orange">Our Mission</div>
+              <div className="text-3xl max-w-3xl font-din text-nomu-red">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
+              <div className="text-2xl max-w-3xl font-din text-nomu-red">This is din font, nomu red</div>
+              <div className="text-2xl max-w-3xl font-nomu text-nomu-orange">This is nomu font, nomu orange</div>
+              <div className="text-2xl max-w-3xl font-hans text-nomu-black">This is hans font, nomu black</div>
+              <div className="text-2xl max-w-3xl text-nomu-salmon">This is default font, nomu salmon</div>
+            </div>
           </div>
-          </section>
 
-        <section
-          id="ordernow"
-          className="h-screen flex items-center justify-center bg-gray-200 text-black"
-        >
-          <FloatingCards />
-        </section>
-        <InfoFooter />
+          <div
+            className="h-screen flex items-center justify-center bg-gray-200 text-black"
+          >
+            <FloatingCards />
+          </div>
+          <InfoFooter />
         
       </main>
 

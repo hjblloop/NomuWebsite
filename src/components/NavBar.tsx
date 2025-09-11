@@ -2,7 +2,7 @@ import React from 'react';
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black bg-opacity-70 backdrop-blur-md text-white z-50 bg-transparent">
+    <nav className="fixed top-0 left-0 w-full bg-opacity-70 backdrop-blur-md text-white z-50 bg-transparent">
       <div className="w-full h-24 flex items-center justify-between">
         <div className="flex justify-start ">
           {/* <img src="/nomuIP.png" alt="IP" className="h-32 w-32" /> */}

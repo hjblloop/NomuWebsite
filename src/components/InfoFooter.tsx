@@ -1,6 +1,6 @@
 const InfoFooter: React.FC = () => {
   return (
-    <footer className="relative bg-neutral text-white px-6 pt-16 pb-10 mt-20">
+    <footer className="relative bg-nomu-orange text-white px-6 pt-16 pb-10 w-full">
       {/* ICON */}
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-16 h-16 rounded-full bg-nomu-salmon flex items-center justify-center shadow-md">
         <img src="/nomuIP.png" alt="Nomu Izakaya" className="w-10 h-10" />
