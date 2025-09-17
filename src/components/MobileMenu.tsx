@@ -4,7 +4,7 @@ const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative md:hidden">
+    <div className="relative">
       {/* Hamburger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
