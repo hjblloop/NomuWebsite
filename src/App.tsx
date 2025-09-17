@@ -1,13 +1,15 @@
-import {useEffect, useState} from 'react';
+import {useEffect, useState, useRef} from 'react';
 import Navbar from './components/NavBar';
 import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
 import FloatingCards from './components/FloatingCard';
 import InfoFooter from './components/InfoFooter';
+import SpinningImage from './components/SpinningImage';
+import NotFloatingCards from './components/NotFloatingCard';
+import { motion } from 'framer-motion';
 
 function App() {
   const [loading, setLoading] = useState(true);
-
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
@@ -49,30 +51,74 @@ function App() {
         </div>
       )}
 
-      <main>
+      <main className="overflow-hidden">
         <section id="home">
           <VideoBackgroundLanding />
         </section>
-        
+        <div className="bg-neutral-900">
           <div
-            className="relative z-0 w-screen bg-white min-h-screen flex items-center justify-center text-black px-4"
+            className="relative z-0 min-h-[60vh] w-full bg-neutral-900 flex flex-col items-center justify-center px-4"
           >
-            <div className="flex flex-col items-center justify-center w-full max-w-4xl sm:max-w-4xl space-y-6 bg-gray-500">
-              <div className="text-3xl sm:text-4xl font-hans text-nomu-orange">Our Mission</div>
-              <div className="text-3xl max-w-3xl font-din text-nomu-red">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
-              <div className="text-2xl max-w-3xl font-din text-nomu-red">This is din font, nomu red</div>
-              <div className="text-2xl max-w-3xl font-nomu text-nomu-orange">This is nomu font, nomu orange</div>
-              <div className="text-2xl max-w-3xl font-hans text-nomu-black">This is hans font, nomu black</div>
-              <div className="text-2xl max-w-3xl text-nomu-salmon">This is default font, nomu salmon</div>
-            </div>
+            <motion.div 
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: 'easeOut' }}
+              viewport={{ once: true, amount: 0.3 }}
+              className="flex flex-col items-center justify-center w-full space-y-6 max-w-7xl bg-neutral-900 translate-y-20"
+            >
+              <div className="text-8xl font-din text-nomu-orange w-full px-4">Our Mission</div>
+              <div className="text-2xl max-w-3xl font-hanss text-nomu-red">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
+              <a 
+                href="/menu.pdf" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-hans text-nomu-red ml-auto mr-40"
+                >
+                <span className="border-2 border-nomu-red rounded-md absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 ease-out pointer-events-none"></span>
+                View Our Menu
+              </a>
+            </motion.div>
+            <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/>
           </div>
 
           <div
-            className="h-screen flex items-center justify-center bg-gray-200 text-black"
+            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex items-center justify-start px-4"
           >
-            <FloatingCards />
+            <div 
+              className="flex flex-col items-center min-h-screen justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-20">
+              <motion.div 
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+                viewport={{ once: true, amount: 0.3 }}
+                className="text-6xl sm:text-8xl font-kaisei text-nomu-orange w-full px-4 z-10 max-w-2xl">
+                Authentic Japanese Small Plates
+
+              </motion.div>
+              <SpinningImage src="matcha.png" alt="matcha" speed="medium" className="w-[25vw] h-auto mt-10 absolute z-0 top-[45%] left-[10%]"/>
+              <SpinningImage src="kushiyakiReal.png" alt="matcha" speed="slow" className="w-[20vw] h-auto mt-10 absolute z-0 top-[50%] left-[40%]"/>
+              <SpinningImage src="sushi.webp" alt="matcha" speed="medium" className="w-[20vw] h-auto mt-10 absolute z-0 top-[40%] left-[70%]"/>
+            </div>
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col items-center justify-center bg-neutral-900 text-black"
+          >
+            <div className="hidden lg:block">
+              <div className="w-full text-9xl text-nomu-red font-nomu text-center mt-0">View Our Menu</div>
+              <FloatingCards />
+            </div>
+            <div className="block lg:hidden">
+              <div className="w-full text-7xl text-nomu-red font-nomu text-center mt-0">View Our Menu</div>
+              <NotFloatingCards />
+            </div>
+          </motion.div>        
           <InfoFooter />
+        </div>
         
       </main>
 
