@@ -27,7 +27,7 @@ const FloatingCards: React.FC = () => {
                 ))}
                 <a
                     key="test"
-                    className={`relative bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex`}
+                    className={`relative bg-nomu-black w-full max-w-xs aspect-square rounded-lg shadow-md items-center justify-center flex`}
                     href={""}
                     target="_blank"
                     rel="noopener noreferrer"
