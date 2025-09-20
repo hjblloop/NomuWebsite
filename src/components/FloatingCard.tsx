@@ -18,7 +18,7 @@ const FloatingCards: React.FC = () => {
                             marginTop: `${card.y}rem`,
                             animationDelay: `${idx * 0.3}s`,
                             animationDuration: '3s'}}
-                        className={`relative float-animation bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex`}
+                        className={`relative float-animation bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex transition-all duration-300 ease-in-out hover:shadow-red-300 hover:brightness-110 hover:shadow-xl hover:scale-101`}
                         href={card.link}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -35,7 +35,7 @@ const FloatingCards: React.FC = () => {
                         marginTop: `${0}rem`,
                         animationDelay: `${1 * 0.3}s`,
                         animationDuration: '3s'}}
-                    className={`relative float-animation bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex`}
+                    className={`relative float-animation bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex transition-all duration-300 ease-in-out hover:shadow-red-300 hover:brightness-110 hover:shadow-xl hover:scale-101`}
                     href={""}
                     target="_blank"
                     rel="noopener noreferrer"

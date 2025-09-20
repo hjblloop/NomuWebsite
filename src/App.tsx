@@ -60,9 +60,10 @@ function App() {
             className="relative z-0 min-h-[60vh] w-full bg-neutral-900 flex flex-col items-center justify-center px-4"
           >
             <motion.div 
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: 'easeOut' }}
+              initial={{ rotateY: 90, opacity: 0 }}
+              animate={{ rotateY: 0, opacity: 1}}
+              transition={{ duration: 3 }}
+              style={{transformStyle: "preserve-3d" }}
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col items-center justify-center w-full space-y-6 max-w-7xl bg-neutral-900 translate-y-20"
             >
@@ -87,9 +88,9 @@ function App() {
             <div 
               className="flex flex-col items-center min-h-screen justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-20">
               <motion.div 
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                initial={{ x: -400, opacity: 0 }}
+                animate={{ x:0, opacity: 1 }}
+                transition={{ duration: 2, ease: 'easeOut' }}
                 viewport={{ once: true, amount: 0.3 }}
                 className="text-6xl sm:text-8xl font-kaisei text-nomu-orange w-full px-4 z-10 max-w-2xl">
                 Authentic Japanese Small Plates
