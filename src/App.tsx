@@ -92,7 +92,7 @@ function App() {
                 animate={{ x:0, opacity: 1 }}
                 transition={{ duration: 2, ease: 'easeOut' }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="text-6xl sm:text-8xl font-kaisei text-nomu-orange w-full px-4 z-10 max-w-2xl">
+                className="relative text-6xl sm:text-8xl font-kaisei text-nomu-orange w-full px-4 z-10 max-w-2xl">
                 Authentic Japanese Small Plates
 
               </motion.div>
