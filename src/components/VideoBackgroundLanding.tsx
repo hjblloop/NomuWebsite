@@ -9,13 +9,13 @@ const VideoBackgroundLanding: React.FC = () => {
   };
 
   return (
-    <div className="relative h-screen overflow-x-hidden overflow-y-hidden">
+    <div className="relative w-full h-screen overflow-hidden">
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="fixed -z-10 object-cover md:w-full md:h-full"
+        className="absolute top-0 left-0 -z-10 object-cover w-full h-full"
       >
         <source src="/nomuvideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
