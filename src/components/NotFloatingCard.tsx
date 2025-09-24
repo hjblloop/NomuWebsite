@@ -19,7 +19,7 @@ const FloatingCards: React.FC = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div className="text-xl flex flex-col items-center justify-center text-nomu-red font-nomu">
+                        <div className="text-xl flex flex-col items-center justify-center text-nomu-red font-kaisei">
                             <div>{card.content}</div>
                             <img src={card.imageSource} alt={card.imageAlt} className="w-full max-w-xs items-center aspect-auto object-contain" />
                         </div>

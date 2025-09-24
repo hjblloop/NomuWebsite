@@ -1,15 +1,15 @@
 import React from 'react';
 
 const cards = [
-    {title: "Food Card", content: "Food Menu", y:0, imageSource:"/sushi.png", imageAlt:"sushi", link:'/menu.pdf'},
-    {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/catDrink.png", imageAlt:"drinks", link:'/drinkMenu.pdf'},
-    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakiGrill.jpg", imageAlt:"kushiyaki", link:''},
-    // {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"happyHour.png", imageAlt:"happy hour", link:''},
+    {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
+    {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
+    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:''},
+    {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"happyhourfloat1.jpg", imageAlt:"happy hour", link:''},
 ];
 
 const FloatingCards: React.FC = () => {
     return (
-        <div className="min-h-screen w-full max-h-screen flex justify-center p-2 sm:p-6 overflow-y-auto mt-10">
+        <div className="min-h-screen w-full h-auto flex justify-center p-2 sm:p-6 overflow-y-auto mt-10">
             <div className="grid grid-cols-[repeat(auto-fit,_minmax(225px,_1fr))] gap-6 sm:gap-10 w-full max-w-7xl mx-auto">
                 {cards.map((card, idx) => (
                     <a
@@ -24,12 +24,12 @@ const FloatingCards: React.FC = () => {
                         rel="noopener noreferrer"
                     >
                         <div className="text-xl flex flex-col items-center justify-center text-nomu-red font-nomu">
-                            <div className="whitespace-pre-line">{card.content}</div>
-                            <img src={card.imageSource} alt={card.imageAlt} className="w-full max-w-xs h-auto aspect-[1/1] items-center sm:aspect-auto object-contain" />
-                        </div>
+                            <img src={card.imageSource} alt={card.imageAlt} className="-z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-0" />
+                        <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{card.content}</div>
+                    </div>
                     </a>
                 ))}
-                <a
+                {/* <a
                     key="test"
                     style={{ 
                         marginTop: `${0}rem`,
@@ -44,7 +44,7 @@ const FloatingCards: React.FC = () => {
                         <img src="/sushi.webp" alt="sushi" className="-z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-180" />
                         <div className="absolute bottom-4 whitespace-pre-line text-red text-end">Happy Hour Coming Soon</div>
                     </div>
-                </a>
+                </a> */}
             </div>
         </div>
     );

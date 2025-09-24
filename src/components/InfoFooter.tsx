@@ -1,9 +1,22 @@
 //<div className="flex-1 h-0.5 bg-red-500" /> red line on one side
+//motion.div 
+              // initial={{ rotateY: 90, opacity: 0 }}
+              // animate={{ rotateY: 0, opacity: 1}}
+              // transition={{ duration: 3 }}
+              // style={{transformStyle: "preserve-3d" }}
+              // viewport={{ once: true, amount: 0.3 }}
+import { motion } from "framer-motion";
 
 const InfoFooter: React.FC = () => {
   return (
-    <footer className=" flex flex-col items-center justify-center relative bg-neutral-900 text-white pb-10 w-full">
-      <div className="flex items-start justify-center flex-col border w-4/5 border-red-500">
+    <footer className="mt-20 flex flex-col items-center justify-center relative bg-neutral-900 text-white pb-10 w-full">
+      <motion.div
+        initial={{ scale: 1.5, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1}}
+        transition={{ duration: 2 }}
+        style={{transformStyle: "preserve-3d" }}
+        viewport={{ once: true, amount: 0.3 }} 
+        className="flex items-start justify-center flex-col border w-4/5 border-red-500">
         <div className="relative w-full flex justify-center px-4 py-8 -translate-y-18.5">
           <div className="relative z-10 px-4 bg-neutral-900 rounded-full shadow-md">
             <img
@@ -37,7 +50,7 @@ const InfoFooter: React.FC = () => {
             </address>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div className="text-center text-xs mt-8">
           &copy; {new Date().getFullYear()} Nomu Izakaya. All rights reserved. | Developed by JC Software 
       </div>

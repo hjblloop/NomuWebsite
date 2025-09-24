@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
         </div>        
       </div>
       <div className="hidden lg:block">
-          <div className="w-full justify-end text-center text-sm font-medium mr-4 text-nomu-red font-nomu flex flex-row pointer-events-auto -ml-px -mt-px">
+          <div className="w-full justify-end text-center text-sm font-medium mr-4 text-nomu-red font-kaisei flex flex-row pointer-events-auto -ml-px -mt-px">
             <a href="#home" className="text-xl transition block border border-red-500 hover:bg-red-300 p-9">Home</a>
             <a href="/menu.pdf" target="_blank" rel="noopener noreferrer" className="transition text-xl block border border-red-500 hover:bg-red-300 p-9 -ml-px whitespace-nowrap">View Menu</a>
             <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="text-xl transition block border border-red-500 hover:bg-red-300 p-9 -ml-px whitespace-nowrap" target="_blank" rel="noopener noreferrer">Reserve Now</a>
