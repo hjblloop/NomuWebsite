@@ -9,7 +9,7 @@ const VideoBackgroundLanding: React.FC = () => {
   };
 
   return (
-    <div className="relative h-screen overflow-x-hidden">
+    <div className="relative h-screen overflow-x-hidden overflow-y-hidden">
       <video
         autoPlay
         loop

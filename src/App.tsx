@@ -67,11 +67,7 @@ function App() {
             </div>
           </div>
 
-          <div
-            className="h-screen flex items-center justify-center bg-gray-200 text-black"
-          >
-            <FloatingCards />
-          </div>
+          <FloatingCards />
           <InfoFooter />
         
       </main>
