@@ -99,7 +99,7 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img src="foodflip1.jpg" className="absolute z-10 w-1/3 h-auto transform rotate-90 top-[10%] left-[33%]" />
+            <img alt="food" src="foodflip1.jpg" className="absolute z-10 w-1/3 h-auto transform rotate-90 top-[10%] left-[33%]" />
           </div>
           
 
@@ -121,8 +121,8 @@ function App() {
               <SpinningImage src="kushiyakiReal.png" alt="matcha" speed="slow" className="w-[20vw] h-auto mt-10 absolute z-0 top-[50%] left-[40%]"/>
               <SpinningImage src="sushi.webp" alt="matcha" speed="medium" className="w-[20vw] h-auto mt-10 absolute z-0 top-[40%] left-[70%]"/> */}
               
-              <img src="food1.jpg" className="absolute w-[15vw] h-auto z-50 top-[50%] left-[20%] z-0"/>
-              <img src="food2.jpg" className="absolute w-[15vw] h-auto z-50 top-[30%] left-[50%] z-0"/>
+              <img alt="food1" src="food1.jpg" className="absolute w-[15vw] h-auto z-50 top-[50%] left-[20%] z-0"/>
+              <img alt="food2" src="food2.jpg" className="absolute w-[15vw] h-auto z-50 top-[30%] left-[50%] z-0"/>
               
             </div>
           </div>
