@@ -83,10 +83,53 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 -translate-y-1/12"
+                className="flex flex-col items-center w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 text-center -translate-y-1/12"
               >
-                <div className="text-8xl font-kaisei text-gray-300 w-full mt-10 ml-20 px-4">Our Mission</div>
-                <div className="text-2xl max-w-3xl font-kaisei text-gray-300">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
+                <div className="text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
+                {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
+                  At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.
+                </div> */}
+                <div className="text-3xl w-full max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
+                  {/* <div className="mr-10 space-y-4">
+                    <div>
+                      At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to feel intimidating or out of reach. That’s why we put so much care into every dish — keeping it fresh, flavorful, and made to be enjoyed. Whether it’s your first visit or your fiftieth, we want every plate to feel like something special.
+                    </div>
+                    <div>
+                      We see Nomu as more than just a place to eat — it’s a place to connect. Maybe you’re grabbing a quick bite after work, catching up with friends over skewers and sake, or making a night of it with family. However you come in, we want you to feel like you’ve stepped into a space that’s lively, welcoming, and made for sharing moments that matter.                  
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div>
+                      For us, food has always been about community. It’s the conversations across the table, the laughter that lingers longer than the meal, and the comfort of knowing there’s always a spot here for you. That’s why we put so much energy into creating an atmosphere that’s inclusive, fun, and designed to bring people together.                  </div>
+                    <div>
+                      At the end of the day, Nomu is about more than filling a table — it’s about creating memories. The flavors, the people, the late-night energy — they all come together to make each visit something worth holding onto. Because when you’re here, it’s not just dinner or drinks. It’s a moment you’ll want to come back to again and again.
+                    </div>
+                  </div> */}
+                  {/* three */}
+                  {/* <div className="mr-10 space-y-4">
+                    <div>
+                      At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to be out of reach, and we’re committed to serving dishes that are fresh, thoughtful, and full of flavor.
+                    </div>
+                    <div>
+                      We see Nomu as more than just a place to eat — it’s a place to connect. Whether you’re stopping in for a quick bite, sharing skewers and sake with friends, or celebrating with family, we want you to feel at home in a lively and welcoming space.
+                    </div>
+                  </div>
+                  <div className="space-y-4 flex flex-col items-center">
+                    <div>
+                      For us, food is about community. That’s why we work to create an atmosphere that’s inclusive, fun, and built around bringing people together. We look forward to sharing meals and memories with you!
+                    </div>
+                    <a 
+                      href="/menu.pdf" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="mt-4 group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-40"
+                      >
+                      <span className="border-2 border-nomu-red rounded-md absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 ease-out pointer-events-none"></span>
+                      View Our Menu
+                    </a>
+                  </div> */}
+                  Small plates, good company, and a welcoming vibe - turning every meal into a shared experience
+                </div>
                 <a 
                   href="/menu.pdf" 
                   target="_blank" 
@@ -99,13 +142,13 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/6" />
+            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/10" />
           </div>
           <div
-            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex items-center justify-start px-4"
+            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4"
           >
             <div 
-              className="flex flex-col items-center min-h-screen justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-60">
+              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-60">
               <motion.div 
                 initial={{ x: -400, opacity: 0 }}
                 animate={{ x:0, opacity: 1 }}
@@ -118,10 +161,14 @@ function App() {
               {/* <SpinningImage src="matcha.png" alt="matcha" speed="medium" className="w-[25vw] h-auto mt-10 absolute z-0 top-[45%] left-[90%]"/>
               <SpinningImage src="kushiyakiReal.png" alt="matcha" speed="slow" className="w-[20vw] h-auto mt-10 absolute z-0 top-[50%] left-[40%]"/>
               <SpinningImage src="sushi.webp" alt="matcha" speed="medium" className="w-[20vw] h-auto mt-10 absolute z-0 top-[40%] left-[70%]"/> */}
+                      
               
-              <img alt="food1" src="food1.jpg" className="absolute w-[15vw] h-auto z-50 top-[50%] left-[20%]"/>
-              <img alt="food2" src="food2.jpg" className="absolute w-[15vw] h-auto z-50 top-[30%] left-[50%]"/>
-              
+            </div>
+            <div className="flex flex-row p-2 justify-center m-2 items-center ">
+                <img alt="food1" src="food1.jpg" className="w-auto h-[60vh] z-50 m-4"/>
+                <img alt="food2" src="food2.jpg" className="w-auto h-[60vh] z-50 m-4"/>
+                <img alt="food3" src="vertical.jpg" className="w-auto h-[60vh] z-50 m-4" />
+                <img alt="food4" src="udon.jpg" className="w-auto h-[60vh] z-50 m-4" />
             </div>
           </div>
 
@@ -133,11 +180,11 @@ function App() {
             className="flex flex-col items-center justify-center bg-neutral-900 text-black"
           >
             <div className="hidden lg:block">
-              <div className="w-full text-9xl text-nomu-red font-kaisei text-center mt-0">View Our Menu</div>
+              <div className="w-full text-9xl text-white font-kaisei text-center mt-0">View Our Menu</div>
               <FloatingCards />
             </div>
             <div className="block lg:hidden">
-              <div className="w-full text-7xl text-nomu-red font-kaisei text-center mt-0">View Our Menu</div>
+              <div className="w-full text-7xl text-white font-kaisei text-center mt-0">View Our Menu</div>
               <NotFloatingCards />
             </div>
           </motion.div>        

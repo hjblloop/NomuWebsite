@@ -4,7 +4,7 @@ const cards = [
     {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
     {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
     {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:''},
-    {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"happyhourfloat1.jpg", imageAlt:"happy hour", link:''},
+    {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''},
 ];
 
 const FloatingCards: React.FC = () => {
@@ -17,13 +17,13 @@ const FloatingCards: React.FC = () => {
                         style={{ 
                             marginTop: `${card.y}rem`,
                             animationDelay: `${idx * 0.3}s`,
-                            animationDuration: '3s'}}
+                            animationDuration: '6s'}}
                         className={`relative float-animation bg-nomu-black w-full max-w-xs aspect-[16/40] rounded-lg shadow-md items-center justify-center flex transition-all duration-300 ease-in-out hover:shadow-red-300 hover:brightness-110 hover:shadow-xl hover:scale-101`}
                         href={card.link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <div className="text-xl flex flex-col items-center justify-center text-nomu-red font-nomu">
+                        <div className="text-xl flex flex-col items-center justify-center text-white font-kaisei font-bold">
                             <img src={card.imageSource} alt={card.imageAlt} className="-z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-0" />
                         <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{card.content}</div>
                     </div>
