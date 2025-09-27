@@ -73,9 +73,9 @@ function App() {
           </div> */}
         </section>
         <div className="bg-neutral-900">
-          <div className="relative flex flex-col items-center justify-center">
+          <div className="relative flex flex-col items-center justify-center h-[80vh]">
             <div
-              className="relative z-0 min-h-[60vh] w-full bg-neutral-900 flex flex-col items-start justify-center"
+              className="relative z-0 w-full h-screen bg-transparent flex flex-col items-start justify-center translate-y-7/10"
             >
               <motion.div 
                 initial={{ rotateY: 90, opacity: 0 }}
@@ -83,7 +83,7 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full h-screen space-y-6 max-w-7xl bg-neutral-800 -translate-y-20"
+                className="flex flex-col items-center w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 -translate-y-1/12"
               >
                 <div className="text-8xl font-kaisei text-gray-300 w-full mt-10 ml-20 px-4">Our Mission</div>
                 <div className="text-2xl max-w-3xl font-kaisei text-gray-300">At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.</div>
@@ -99,15 +99,13 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img alt="food" src="foodflip1.jpg" className="absolute z-10 w-1/3 h-auto transform rotate-90 top-[10%] left-[33%]" />
+            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/6" />
           </div>
-          
-
           <div
-            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex items-center justify-start px-4 mt-30"
+            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex items-center justify-start px-4"
           >
             <div 
-              className="flex flex-col items-center min-h-screen justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-20">
+              className="flex flex-col items-center min-h-screen justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-60">
               <motion.div 
                 initial={{ x: -400, opacity: 0 }}
                 animate={{ x:0, opacity: 1 }}
