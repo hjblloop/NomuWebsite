@@ -89,6 +89,9 @@ html, body {
   .bg-nomu-red {
     background-color: #FF3A00
   }
+  .hover\:bg-nomu-red:hover {
+    background-color: #FF3A00
+  }
   .bg-nomu-orange {
     background-color: #FFC864
   }

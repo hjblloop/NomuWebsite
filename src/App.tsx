@@ -83,13 +83,13 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 text-center -translate-y-1/12"
+                className="flex flex-col items-center w-full lg:w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 text-center -translate-y-1/12"
               >
-                <div className="text-6xl lg:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
+                <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
                   At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.
                 </div> */}
-                <div className="text-2xl lg:text-3xl w-full max-w-2xl lg:max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
+                <div className="text-2xl md:text-3xl w-full max-w-2xl md:max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
                   {/* <div className="mr-10 space-y-4">
                     <div>
                       At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to feel intimidating or out of reach. That’s why we put so much care into every dish — keeping it fresh, flavorful, and made to be enjoyed. Whether it’s your first visit or your fiftieth, we want every plate to feel like something special.
@@ -143,13 +143,13 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/10" />
+            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-2/10" />
           </div>
           <div
-            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4"
+            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4 translate-y-1/10"
           >
             <div 
-              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900 mt-60">
+              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900">
               <motion.div 
                 initial={{ x: -400, opacity: 0 }}
                 animate={{ x:0, opacity: 1 }}
@@ -165,7 +165,7 @@ function App() {
                       
               
             </div>
-            <div className="flex flex-wrap p-2 justify-center m-2 items-center ">
+            <div className="flex flex-wrap p-2 justify-center m-2 items-start ">
                 <img alt="food1" src="food1.jpg" className="w-auto h-[60vh] z-50 p-2"/>
                 <img alt="food2" src="food2.jpg" className="w-auto h-[60vh] z-50 p-2"/>
                 <img alt="food3" src="vertical.jpg" className="w-auto h-[60vh] z-50 p-2" />
@@ -181,11 +181,11 @@ function App() {
             className="flex flex-col items-center justify-center bg-neutral-900 text-black"
           >
             <div className="hidden lg:block">
-              <div className="w-full text-9xl text-white font-kaisei text-center mt-0">View Our Menu</div>
+              <div className="w-full text-9xl text-white font-kaisei text-center mt-40">View Our Menu</div>
               <FloatingCards />
             </div>
             <div className="block lg:hidden">
-              <div className="w-full text-7xl text-white font-kaisei text-center mt-0">View Our Menu</div>
+              <div className="w-full text-7xl text-white font-kaisei text-center mt-40">View Our Menu</div>
               <NotFloatingCards />
             </div>
           </motion.div>        

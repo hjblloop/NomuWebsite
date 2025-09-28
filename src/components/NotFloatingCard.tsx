@@ -3,7 +3,7 @@ import React from 'react';
 const cards = [
     {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
     {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
-    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:''},
+    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/kushiyakiMenu.pdf'},
     {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''},
 ];
 
@@ -20,7 +20,7 @@ const FloatingCards: React.FC = () => {
                         rel="noopener noreferrer"
                     >
                         <div className="text-xl flex flex-col items-center justify-center text-white font-kaisei font-bold">
-                            <img src={card.imageSource} alt={card.imageAlt} className="absolute top-1/2 left-1/2 w-[auto] h-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2" />
+                            <img src={card.imageSource} alt={card.imageAlt} className="opacity-50 absolute top-1/2 left-1/2 w-[auto] h-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2" />
                             <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{card.content}</div>
                         </div>
                     </a>

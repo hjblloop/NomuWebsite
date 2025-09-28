@@ -24,9 +24,9 @@ const FloatingCards: React.FC = () => {
                         rel="noopener noreferrer"
                     >
                         <div className="text-xl flex flex-col items-center justify-center text-white font-kaisei font-bold">
-                            <img src={card.imageSource} alt={card.imageAlt} className="-z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-0" />
-                        <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{card.content}</div>
-                    </div>
+                            <img src={card.imageSource} alt={card.imageAlt} className="opacity-50 hover:opacity-100 transition duration-700 -z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-0" />
+                            <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{card.content}</div>
+                        </div>
                     </a>
                 ))}
                 {/* <a
