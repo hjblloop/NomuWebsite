@@ -73,9 +73,9 @@ function App() {
           </div> */}
         </section>
         <div className="bg-neutral-900">
-          <div className="relative flex flex-col items-center justify-center h-screen">
+          <div className="relative h-screen flex flex-col items-center">
             <div
-              className="relative z-0 w-full h-screen bg-transparent flex flex-col items-start justify-between translate-y-4/10"
+              className="z-0 w-full bg-transparent flex flex-col items-start justify-between -translate-y-1/2"
             >
               <motion.div 
                 initial={{ rotateY: 90, opacity: 0 }}
@@ -83,7 +83,7 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full lg:w-3/4 h-screen space-y-6 max-w-7xl bg-neutral-800 text-center -translate-y-1/12"
+                className="flex flex-col items-center w-full lg:w-3/4 h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
               >
                 <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
@@ -143,10 +143,10 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-2/10" />
+            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-4/6" />
           </div>
           <div
-            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4 translate-y-1/10"
+            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4 "
           >
             <div 
               className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900">
@@ -165,7 +165,7 @@ function App() {
                       
               
             </div>
-            <div className="flex flex-wrap p-2 justify-center m-2 items-start ">
+            <div className="flex flex-wrap p-4 justify-center m-2 items-start ">
                 <img alt="food1" src="food1.jpg" className="w-auto h-[60vh] z-50 p-2"/>
                 <img alt="food2" src="food2.jpg" className="w-auto h-[60vh] z-50 p-2"/>
                 <img alt="food3" src="vertical.jpg" className="w-auto h-[60vh] z-50 p-2" />
@@ -180,7 +180,7 @@ function App() {
             viewport={{ once: true, amount: 0.3 }}
             className="flex flex-col items-center justify-center bg-neutral-900 text-black"
           >
-            <div className="hidden lg:block">
+            <div className="hidden lg:block w-full">
               <div className="w-full text-9xl text-white font-kaisei text-center mt-40">View Our Menu</div>
               <FloatingCards />
             </div>
