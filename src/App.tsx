@@ -83,7 +83,7 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full lg:w-3/4 h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
+                className="flex flex-col items-center w-full h-[60vh] lg:w-3/4 md:h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
               >
                 <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
