@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-//import MobileMenu from './MobileMenu';
+import MobileMenu from './MobileMenu';
 
 const Navbar: React.FC = () => {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -19,14 +19,14 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`fixed flex top-0 left-0 w-full transition-all duration-500 z-50 h-20 ease-in-out ${isAtTop ? "bg-transparent" :"bg-neutral-900"} pointer-events-none`}>
-      <div className="w-full h-auto flex items-center justify-between pointer-events-auto">
+      <div className="w-full h-auto flex items-center justify-start pointer-events-auto">
         <div className="flex justify-center items-center">
-          <img src="/nomulogo.png" alt="logo" className="h-40 w-auto"></img>
+          <img src="/nomulogotest.png" alt="logo" className="h-[13vh] w-auto"></img>
         </div>        
       </div>
       {/* <div className="hidden lg:block"> UNCOMMENT WHEN IMPLEMENTING MOBILE VERSION*/}
         <div>
-          <div className="w-auto h-full text-center items-center font-medium text-white font-kaisei flex flex-row pointer-events-auto -ml-px -mt-px text-sm sm:text-md md:text-xl lg:text-2xl">
+          <div className="hidden w-auto h-full text-center items-center font-medium text-white font-kaisei md:flex md:flex-row pointer-events-auto -ml-px -mt-px text-sm sm:text-md md:text-xl lg:text-2xl">
             {/* <a href="#home" className="transition block border border-red-500 hover:bg-red-300 p-7">Home</a> */}
             {/* About Us Later */}
             <a href="tel:+9045666735" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap">(904)566-6735</a>
@@ -34,9 +34,9 @@ const Navbar: React.FC = () => {
             <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap" target="_blank" rel="noopener noreferrer">Order Online</a>
           </div>
         </div>
-        {/* <div className="block lg:hidden">
+        <div className="flex md:hidden justify-start items-center p-4 pointer-events-auto">
           <MobileMenu />
-        </div> */}
+        </div>
     </nav>
   );
 };

@@ -16,7 +16,7 @@ const InfoFooter: React.FC = () => {
         transition={{ duration: 2 }}
         style={{transformStyle: "preserve-3d" }}
         viewport={{ once: true, amount: 0.3 }} 
-        className="flex items-center justify-center flex-col border w-4/5 border-red-500">
+        className="hidden md:block flex items-center justify-center flex-col border w-4/5 border-red-500">
         <div className="relative w-full flex justify-center px-4 py-8 -translate-y-18.5">
           <div className="relative z-10 px-4 bg-neutral-900 rounded-full shadow-md">
             <img
@@ -33,7 +33,7 @@ const InfoFooter: React.FC = () => {
           <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition flex-1 cursor-pointer" target="_blank" rel="noopener noreferrer">Order Now</a>
           <a href="tel:+9045666735" className="flex-1 cursor-pointer">Contact</a>
         </div>
-        <div className="text-xs font-kaisei sm:text-sm lg:text-md -translate-y-9 whitespace-pre">
+        <div className="text-xs font-kaisei sm:text-sm lg:text-md text-center -translate-y-9 whitespace-pre">
           7540 Gate Parkway Suite 103   |   Jacksonville, FL 32256   |   Copyright 2025
         </div>
         {/* <div className="max-w-6xl mx-auto text-center grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm -translate-y-18.5">
@@ -61,6 +61,28 @@ const InfoFooter: React.FC = () => {
           </div>
         </div> */}
       </motion.div>
+      <div className="block md:hidden flex items-center justify-center flex-col border w-4/5 border-red-500">
+          <div className="relative w-full flex justify-center px-4 py-8 -translate-y-18.5">
+          <div className="relative z-10 px-4 bg-neutral-900 rounded-full shadow-md">
+            <img
+              src="/nomulogosmall.png"
+              alt="Nomu Izakaya"
+              className="max-w-1/2 mx-auto object-contain"
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto flex flex-col text-center justify-center text-xl font-kaisei -translate-y-18.5 w-full">
+          <a href="#" className="transition flex-1 cursor-pointer p-2">Home</a>
+          <a href="/menu.pdf" target="_blank" rel="noopener noreferrer" className="transition flex-1 cursor-pointer p-2">Menu</a>
+          <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="transition flex-1 cursor-pointer p-2" target="_blank" rel="noopener noreferrer">Reservation</a>
+          <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition flex-1 cursor-pointer p-2" target="_blank" rel="noopener noreferrer">Order Now</a>
+          <a href="tel:+9045666735" className="flex-1 cursor-pointer mt-2">Contact</a>
+        </div>
+        <div className="text-xs font-kaisei sm:text-sm lg:text-md text-center -translate-y-9 md:whitespace-pre">
+          <div>7540 Gate Parkway Suite 103</div>
+          <div className="p-2">Jacksonville, FL 3225</div>
+        </div>
+      </div>
       <div className="text-center text-lg font-kaisei mt-4">
         Sunday - Thursday: 4:00PM - 12:00AM
       </div>

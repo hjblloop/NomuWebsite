@@ -1,9 +1,9 @@
 import React from 'react';
 
 const cards = [
-    {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
-    {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
-    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/kushiyakiMenu.pdf'},
+    {title: "Food Card", content: "Food Menu", y:0.5, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
+    {title: "Drinks Card", content: "Drinks Menu", y:2, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
+    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:1.5, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/kushiyakiMenu.pdf'},
     // {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:1, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''},
 ];
 
@@ -12,7 +12,7 @@ const kushiyaki = {title: "Happy Hour Card", content: "Happy Hour \ncoming soon"
 const FloatingCards: React.FC = () => {
     return (
         <div className="w-full h-auto flex justify-center p-2 sm:p-6 overflow-y-auto mt-10">
-            <div className="flex flex-row gap-6 sm:gap-10 w-full max-w-7xl mx-auto">
+            <div className="flex flex-row gap-6 sm:gap-10 w-full h-[80vh] max-w-7xl mx-auto">
                 {cards.map((card, idx) => (
                     <a
                         key={idx}

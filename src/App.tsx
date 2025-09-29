@@ -56,7 +56,7 @@ function App() {
           </div>
         )}
         <section id="home" className="relative">
-          <VideoBackgroundLanding />
+          <img alt="Nomu Izakaya" src="/outdoorcut4.jpg" className="-z-10 w-screen"/>
           {/* <div className="absolute top-0 left-0 w-1/25 h-full flex flex-col z-10 border border-red-500 items-center justify-center text-2xl font-kaisei text-nomu-red">
             <span>N</span>
             <span>O</span>
@@ -73,9 +73,9 @@ function App() {
           </div> */}
         </section>
         <div className="bg-neutral-900">
-          <div className="relative h-screen flex flex-col items-center">
+          <div className="relative lg:h-screen flex flex-col items-center">
             <div
-              className="z-0 w-full bg-transparent flex flex-col items-start justify-between -translate-y-1/2"
+              className="z-0 w-full bg-transparent flex flex-col items-start justify-between lg:-translate-y-1/3"
             >
               <motion.div 
                 initial={{ rotateY: 90, opacity: 0 }}
@@ -89,7 +89,7 @@ function App() {
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
                   At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.
                 </div> */}
-                <div className="text-2xl md:text-3xl w-full max-w-2xl md:max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
+                <div className="text-md sm:text-2xl sm:max-w-3xl md:text-3xl w-full max-w-xl md:max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
                   {/* <div className="mr-10 space-y-4">
                     <div>
                       At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to feel intimidating or out of reach. That’s why we put so much care into every dish — keeping it fresh, flavorful, and made to be enjoyed. Whether it’s your first visit or your fiftieth, we want every plate to feel like something special.
@@ -134,7 +134,7 @@ function App() {
                   href="/menu.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-40"
+                  className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-10"
                   >
                   <span className="border-2 border-nomu-red rounded-md absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 ease-out pointer-events-none"></span>
                   View Our Menu
@@ -143,10 +143,10 @@ function App() {
               </motion.div>
               {/* <img alt="Nomu Family" src="/nomuFamily.jpg" className="mt-30 w-[40vw] h-auto max-w-full"/> */}
             </div>
-            <img alt="food" src="foodflip1.jpg" className="z-10 w-1/3 h-auto transform rotate-90 -translate-y-4/6" />
+            <img alt="food" src="foodflip1.jpg" className="hidden lg:block z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/2" />
           </div>
           <div
-            className="relative z-0 min-h-[80vh] w-screen bg-neutral-900 flex flex-col justify-between px-4 "
+            className="relative z-0 w-screen bg-neutral-900 flex flex-col justify-between px-4 lg:translate-y-1/5"
           >
             <div 
               className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900">
@@ -166,10 +166,16 @@ function App() {
               
             </div>
             <div className="flex flex-wrap p-4 justify-center m-2 items-start ">
-                <img alt="food1" src="food1.jpg" className="w-auto h-[60vh] z-50 p-2"/>
-                <img alt="food2" src="food2.jpg" className="w-auto h-[60vh] z-50 p-2"/>
-                <img alt="food3" src="vertical.jpg" className="w-auto h-[60vh] z-50 p-2" />
-                <img alt="food4" src="udon.jpg" className="w-auto h-[60vh] z-50 p-2" />
+                <img alt="food1" src="food1.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2"/>
+                <img alt="food2" src="food2.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2"/>
+                <img alt="food3" src="vertical.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2" />
+                <img alt="food4" src="udon.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2" />
+            </div>
+            <div className="grid grid-cols-2 gap-6 justify-center m-2 items-start">
+              <img alt="food1" src="food1.jpg" className="lg:hidden w-[60vw] h-auto z-50 p-2"/>
+                <img alt="food2" src="food2.jpg" className="lg:hidden w-[60vw] h-auto z-50 p-2"/>
+                <img alt="food3" src="vertical.jpg" className="lg:hidden w-[60vw] h-auto z-50 p-2" />
+                <img alt="food4" src="udon.jpg" className="lg:hidden w-[60vw] h-auto z-50 p-2" />
             </div>
           </div>
 
@@ -178,7 +184,7 @@ function App() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-col items-center justify-center bg-neutral-900 text-black"
+            className="flex flex-col items-center justify-center bg-neutral-900 text-black lg:mt-10"
           >
             <div className="hidden lg:block w-full">
               <div className="w-full text-9xl text-white font-kaisei text-center mt-40">View Our Menu</div>
