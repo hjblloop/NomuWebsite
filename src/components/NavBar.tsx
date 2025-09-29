@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import MobileMenu from './MobileMenu';
+//import MobileMenu from './MobileMenu';
 
 const Navbar: React.FC = () => {
   const [isAtTop, setIsAtTop] = useState(true);
