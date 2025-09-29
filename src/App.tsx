@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import Navbar from './components/NavBar';
-import VideoBackgroundLanding from './components/VideoBackgroundLanding';
+// import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
 import FloatingCards from './components/FloatingCard';
 import InfoFooter from './components/InfoFooter';
