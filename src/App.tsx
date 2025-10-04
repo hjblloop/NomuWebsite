@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import Navbar from './components/NavBar';
-import VideoBackgroundLanding from './components/VideoBackgroundLanding';
+//import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
 import FloatingCards from './components/FloatingCard';
 import InfoFooter from './components/InfoFooter';
@@ -72,7 +72,7 @@ function App() {
             <span>A</span>
           </div> */}
         </section>
-        <div className="bg-nomu-charcoal">
+        <div className="bg-neutral-900">
           <div className="relative lg:h-screen flex flex-col items-center">
             <div
               className="z-0 w-full bg-transparent flex flex-col items-start justify-between lg:-translate-y-1/3"
@@ -83,7 +83,7 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full h-[50vh] lg:w-3/4 md:h-[65vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
+                className="flex flex-col items-center w-full h-[60vh] lg:w-3/4 md:h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
               >
                 <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
@@ -108,10 +108,10 @@ function App() {
             <img alt="food" src="foodflip1.jpg" className="hidden lg:block z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/2" />
           </div>
           <div
-            className="relative z-0 w-screen bg-nomu-charcoal flex flex-col justify-between px-4 lg:translate-y-1/5"
+            className="relative z-0 w-screen bg-neutral-900 flex flex-col justify-between px-4 lg:translate-y-1/5"
           >
             <div 
-              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-nomu-charcoal">
+              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900">
               <motion.div 
                 initial={{ x: -400, opacity: 0 }}
                 animate={{ x:0, opacity: 1 }}
