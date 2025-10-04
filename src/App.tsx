@@ -72,7 +72,7 @@ function App() {
             <span>A</span>
           </div> */}
         </section>
-        <div className="bg-neutral-900">
+        <div className="bg-nomu-charcoal">
           <div className="relative lg:h-screen flex flex-col items-center">
             <div
               className="z-0 w-full bg-transparent flex flex-col items-start justify-between lg:-translate-y-1/3"
@@ -146,10 +146,10 @@ function App() {
             <img alt="food" src="foodflip1.jpg" className="hidden lg:block z-10 w-1/3 h-auto transform rotate-90 -translate-y-1/2" />
           </div>
           <div
-            className="relative z-0 w-screen bg-neutral-900 flex flex-col justify-between px-4 lg:translate-y-1/5"
+            className="relative z-0 w-screen bg-nomu-charcoal flex flex-col justify-between px-4 lg:translate-y-1/5"
           >
             <div 
-              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-neutral-900">
+              className="flex flex-col items-center justify-start w-full max-w-4xl sm:max-w-4xl space-y-6 bg-nomu-charcoal">
               <motion.div 
                 initial={{ x: -400, opacity: 0 }}
                 animate={{ x:0, opacity: 1 }}
