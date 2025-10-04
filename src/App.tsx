@@ -29,7 +29,7 @@ function App() {
       <Helmet>
         <title>Delicious Japanese Food | Best Restaurant in Jacksonville, FL</title>
         <meta name="description" content="A modern Japanese izakaya focused on food, drinks, and late-night hospitality." />
-        <meta name="keywords" content="Japanese Food, Jacksonville restaurant, sushi, izakaya, dine-in, takeout" />
+        <meta name="keywords" content="Japanese Food, Jacksonville restaurant, sushi, izakaya, dine-in, takeout, Japanese" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Nomu Izakaya" />
         <meta property="og:description" content="Come try our japanese food!" />
