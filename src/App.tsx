@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import Navbar from './components/NavBar';
-// import VideoBackgroundLanding from './components/VideoBackgroundLanding';
+import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
 import FloatingCards from './components/FloatingCard';
 import InfoFooter from './components/InfoFooter';
@@ -83,51 +83,13 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full h-[60vh] lg:w-3/4 md:h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
+                className="flex flex-col items-center w-full h-[50vh] lg:w-3/4 md:h-[65vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
               >
                 <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
                   At Nomu, we keep things simple: good food, good drinks, good company. Our goal is to make dining fun, welcoming, and something everyone can enjoy together. Let's turn ordinary moments into unforgettable memories.
                 </div> */}
                 <div className="text-md sm:text-2xl sm:max-w-3xl md:text-3xl w-full max-w-xl md:max-w-4xl mt-20 font-kaisei text-gray-300 space-y-4 text-center">
-                  {/* <div className="mr-10 space-y-4">
-                    <div>
-                      At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to feel intimidating or out of reach. That’s why we put so much care into every dish — keeping it fresh, flavorful, and made to be enjoyed. Whether it’s your first visit or your fiftieth, we want every plate to feel like something special.
-                    </div>
-                    <div>
-                      We see Nomu as more than just a place to eat — it’s a place to connect. Maybe you’re grabbing a quick bite after work, catching up with friends over skewers and sake, or making a night of it with family. However you come in, we want you to feel like you’ve stepped into a space that’s lively, welcoming, and made for sharing moments that matter.                  
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <div>
-                      For us, food has always been about community. It’s the conversations across the table, the laughter that lingers longer than the meal, and the comfort of knowing there’s always a spot here for you. That’s why we put so much energy into creating an atmosphere that’s inclusive, fun, and designed to bring people together.                  </div>
-                    <div>
-                      At the end of the day, Nomu is about more than filling a table — it’s about creating memories. The flavors, the people, the late-night energy — they all come together to make each visit something worth holding onto. Because when you’re here, it’s not just dinner or drinks. It’s a moment you’ll want to come back to again and again.
-                    </div>
-                  </div> */}
-                  {/* three */}
-                  {/* <div className="mr-10 space-y-4">
-                    <div>
-                      At Nomu, our goal is simple: great food, great people, and a great time. We believe that high-quality dining doesn’t need to be out of reach, and we’re committed to serving dishes that are fresh, thoughtful, and full of flavor.
-                    </div>
-                    <div>
-                      We see Nomu as more than just a place to eat — it’s a place to connect. Whether you’re stopping in for a quick bite, sharing skewers and sake with friends, or celebrating with family, we want you to feel at home in a lively and welcoming space.
-                    </div>
-                  </div>
-                  <div className="space-y-4 flex flex-col items-center">
-                    <div>
-                      For us, food is about community. That’s why we work to create an atmosphere that’s inclusive, fun, and built around bringing people together. We look forward to sharing meals and memories with you!
-                    </div>
-                    <a 
-                      href="/menu.pdf" 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="mt-4 group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-40"
-                      >
-                      <span className="border-2 border-nomu-red rounded-md absolute inset-0 scale-0 group-hover:scale-100 transition-transform duration-300 ease-out pointer-events-none"></span>
-                      View Our Menu
-                    </a>
-                  </div> */}
                   Small plates, good company, and a welcoming vibe - turning every meal into a shared experience
                 </div>
                 <a 
@@ -166,10 +128,10 @@ function App() {
               
             </div>
             <div className="flex flex-wrap p-4 justify-center m-2 items-start ">
-                <img alt="food1" src="food1.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2"/>
-                <img alt="food2" src="food2.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2"/>
-                <img alt="food3" src="vertical.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2" />
-                <img alt="food4" src="udon.jpg" className="hidden lg:block w-auto h-[60vh] z-50 p-2" />
+                <img alt="food1" src="food1.jpg" className="hidden lg:block w-[20vw] z-50 p-2"/>
+                <img alt="food2" src="food2.jpg" className="hidden lg:block w-[20vw] z-50 p-2"/>
+                <img alt="food3" src="vertical.jpg" className="hidden lg:block w-[23.7vw] z-50 p-2" />
+                <img alt="food4" src="udon.jpg" className="hidden lg:block w-[23.7vw] z-50 p-2" />
             </div>
             <div className="grid grid-cols-2 gap-6 justify-center m-2 items-start">
               <img alt="food1" src="food1.jpg" className="lg:hidden w-[60vw] h-auto z-50 p-2"/>
@@ -180,18 +142,18 @@ function App() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 40}}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true, amount: 0.3 }}
-            className="flex flex-col items-center justify-center bg-neutral-900 text-black lg:mt-10"
+            className="flex flex-col items-center justify-center bg-neutral-900 text-black mt-50"
           >
             <div className="hidden lg:block w-full">
-              <div className="w-full text-9xl text-white font-kaisei text-center mt-40">View Our Menu</div>
+              <div className="w-full text-9xl text-white font-kaisei text-center">View Our Menu</div>
               <FloatingCards />
             </div>
             <div className="block lg:hidden">
-              <div className="w-full text-7xl text-white font-kaisei text-center mt-40">View Our Menu</div>
+              <div className="w-full text-7xl text-white font-kaisei text-center -mt-40">View Our Menu</div>
               <NotFloatingCards />
             </div>
           </motion.div>        
