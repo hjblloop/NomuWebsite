@@ -33,7 +33,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Nomu Izakaya" />
         <meta property="og:description" content="Come try our japanese food!" />
-        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+        <meta property="og:image" content="nomulogo.png" />
       </Helmet>
       {/* <div className="row-span-1 bg-purple-600 text-white flex items-center justify-center text-xl">
         Side Hero
@@ -93,7 +93,7 @@ function App() {
                   Small plates, good company, and a welcoming vibe - turning every meal into a shared experience
                 </div>
                 <a 
-                  href="/menu.pdf" 
+                  href="/Menu.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-10"
