@@ -1,8 +1,8 @@
 import React from 'react';
 
 const cards = [
-    {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/Menu.pdf'},
-    {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/DrinkMenu.pdf'},
+    {title: "Food Card", content: "Food Menu", y:0, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/FoodMenu.pdf'},
+    {title: "Drinks Card", content: "Drinks Menu", y:1, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/DrinksMenu.pdf'},
     {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:-1, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/KushiyakiMenu.png'},
     {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:2, imageSource:"dasai.jpg", imageAlt:"happy hour", link:'/HappyHourMenu.pdf'},
 ];

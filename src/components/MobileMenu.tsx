@@ -40,7 +40,7 @@ const MobileMenu = () => {
       >
         <div className="flex flex-col py-2 px-4">
           <a href="#home" className=" text-xl transition">Home</a>
-          <a href="/Menu.pdf" target="_blank" rel="noopener noreferrer" className=" transition text-xl">View Menu</a>
+          <a href="/FoodMenu.pdf" target="_blank" rel="noopener noreferrer" className=" transition text-xl">View Menu</a>
           <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="text-xl transition">Reserve Now</a>
           <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="text-xl transition">Order Online</a>
         </div>
@@ -58,7 +58,7 @@ const MobileMenu = () => {
             {/* Menu Content */}
             <div className="flex flex-col py-2 px-4 text-3xl font-kaisei text-white">
               {/* <a href="#home" className=" transition p-4">Home</a> */}
-              <a href="/Menu.pdf" target="_blank" rel="noopener noreferrer" className=" transition p-4">View Menu</a>
+              <a href="/FoodMenu.pdf" target="_blank" rel="noopener noreferrer" className=" transition p-4">View Menu</a>
               <a className="transition p-4" href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00">Reserve Now</a>
               <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition p-4">Order Online</a>
               <a href="tel:+9045666735" className="transition p-4">Contact Us</a>

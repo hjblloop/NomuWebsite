@@ -28,7 +28,7 @@ const InfoFooter: React.FC = () => {
         </div>
         <div className="max-w-6xl mx-auto flex flex-row text-center justify-center text-xl font-kaisei -translate-y-18.5 w-full">
           <a href="#" className="transition flex-1 cursor-pointer">Home</a>
-          <a href="/Menu.pdf" target="_blank" rel="noopener noreferrer" className="transition flex-1 cursor-pointer">Menu</a>
+          <a href="/FoodMenu.pdf" target="_blank" rel="noopener noreferrer" className="transition flex-1 cursor-pointer">Menu</a>
           <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="transition flex-1 cursor-pointer" target="_blank" rel="noopener noreferrer">Reservation</a>
           <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition flex-1 cursor-pointer" target="_blank" rel="noopener noreferrer">Order Now</a>
           <a href="tel:+9045666735" className="flex-1 cursor-pointer">Contact</a>
@@ -73,7 +73,7 @@ const InfoFooter: React.FC = () => {
         </div>
         <div className="max-w-6xl mx-auto flex flex-col text-center justify-center text-xl font-kaisei -translate-y-18.5 w-full">
           <a href="#" className="transition flex-1 cursor-pointer p-2">Home</a>
-          <a href="/Menu.pdf" target="_blank" rel="noopener noreferrer" className="transition flex-1 cursor-pointer p-2">Menu</a>
+          <a href="/FoodMenu.pdf" target="_blank" rel="noopener noreferrer" className="transition flex-1 cursor-pointer p-2">Menu</a>
           <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="transition flex-1 cursor-pointer p-2" target="_blank" rel="noopener noreferrer">Reservation</a>
           <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition flex-1 cursor-pointer p-2" target="_blank" rel="noopener noreferrer">Order Now</a>
           <a href="tel:+9045666735" className="flex-1 cursor-pointer mt-2">Contact</a>

@@ -93,7 +93,7 @@ function App() {
                   Small plates, good company, and a welcoming vibe - turning every meal into a shared experience
                 </div>
                 <a 
-                  href="/Menu.pdf" 
+                  href="/FoodMenu.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-10"
