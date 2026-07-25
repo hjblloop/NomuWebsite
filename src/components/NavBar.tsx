@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           <div className="hidden w-auto h-full text-center items-center font-medium text-white font-kaisei md:flex md:flex-row pointer-events-auto -ml-px -mt-px text-sm sm:text-md md:text-xl lg:text-2xl">
             {/* <a href="#home" className="transition block border border-red-500 hover:bg-red-300 p-7">Home</a> */}
             {/* About Us Later */}
-            <a href="tel:+9045666735" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap">(904)566-6735</a>
+            <a href="tel:+19045666735" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap">(904)566-6735</a>
             <a href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap" target="_blank" rel="noopener noreferrer">Reserve Now</a>
             <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition block border border-red-500 hover:bg-nomu-red p-7.5 md:p-6.5 lg:p-6 -ml-px whitespace-nowrap" target="_blank" rel="noopener noreferrer">Order Online</a>
           </div>

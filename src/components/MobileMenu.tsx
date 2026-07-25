@@ -61,7 +61,7 @@ const MobileMenu = () => {
               <a href="/menu.pdf" target="_blank" rel="noopener noreferrer" className=" transition p-4">View Menu</a>
               <a className="transition p-4" href="https://tables.toasttab.com/restaurants/6ea514eb-e69f-4b84-b316-6496873b74ca/reserve?partySize=2&dateTime=2025-09-10T13:30:00.000-04:00">Reserve Now</a>
               <a href="https://order.toasttab.com/online/nomu-7540-gate-parkway-suite-101" className="transition p-4">Order Online</a>
-              <a href="tel:+9045666735" className="transition p-4">Contact Us</a>
+              <a href="tel:+19045666735" className="transition p-4">Contact Us</a>
             </div>
           </motion.div>
         )}
