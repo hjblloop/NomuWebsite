@@ -7,10 +7,12 @@ import InfoFooter from './components/InfoFooter';
 //import SpinningImage from './components/SpinningImage';
 import NotFloatingCards from './components/NotFloatingCard';
 import { motion } from 'framer-motion';
+import PrivacyPolicy from './screens/PrivacyPolicy';
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
+  const [currentScreen, setCurrentScreen] = useState<'main' | 'privacy'>('main');
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,6 +25,20 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+
+  if (currentScreen === 'privacy') {
+    return (
+      <div>
+        <button 
+          onClick={() => setCurrentScreen('main')} 
+          className="m-4 px-4 py-2 bg-gray-200 rounded text-sm hover:bg-gray-300"
+        >
+          &larr; Back to Main
+        </button>
+        <PrivacyPolicy />
+      </div>
+    );
+  }
 
   return (
     <div className="App scroll-smooth">
@@ -157,7 +173,7 @@ function App() {
               <NotFloatingCards />
             </div>
           </motion.div>        
-          <InfoFooter />
+          <InfoFooter onNavigateToPrivacy={() => setCurrentScreen('privacy')}/>
         </div>
         
       </main>

@@ -7,7 +7,11 @@
               // viewport={{ once: true, amount: 0.3 }}
 import { motion } from "framer-motion";
 
-const InfoFooter: React.FC = () => {
+interface InfoFooterProps {
+  onNavigateToPrivacy?: () => void;
+}
+
+const InfoFooter: React.FC<InfoFooterProps> = ({ onNavigateToPrivacy}) => {
   return (
     <footer className="mt-20 flex flex-col items-center justify-center relative bg-neutral-900 text-white pb-10 w-full">
       <motion.div
@@ -90,7 +94,14 @@ const InfoFooter: React.FC = () => {
         Friday - Saturday: 4:00PM - 2:00AM
       </div>
       <div className="text-center text-xs mt-8">
-          &copy; {new Date().getFullYear()} Nomu Izakaya. All rights reserved. | Developed by JC Software 
+        &copy; {new Date().getFullYear()} Nomu Izakaya. All rights reserved. | Developed by JC Software |{" "}
+        <button 
+          type="button"
+          onClick={onNavigateToPrivacy} 
+          className="hover:underline transition-colors duration-150 text-inherit bg-transparent border-0 p-0 inline cursor-pointer"
+        >
+          Privacy Policy
+        </button>
       </div>
       
     </footer>
