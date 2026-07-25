@@ -1,6 +1,6 @@
 import {useEffect, useState} from 'react';
 import Navbar from './components/NavBar';
-import VideoBackgroundLanding from './components/VideoBackgroundLanding';
+//import VideoBackgroundLanding from './components/VideoBackgroundLanding';
 import {Helmet} from 'react-helmet';
 import FloatingCards from './components/FloatingCard';
 import InfoFooter from './components/InfoFooter';
@@ -29,11 +29,11 @@ function App() {
       <Helmet>
         <title>Delicious Japanese Food | Best Restaurant in Jacksonville, FL</title>
         <meta name="description" content="A modern Japanese izakaya focused on food, drinks, and late-night hospitality." />
-        <meta name="keywords" content="Japanese Food, Jacksonville restaurant, sushi, izakaya, dine-in, takeout" />
+        <meta name="keywords" content="Japanese Food, Jacksonville restaurant, sushi, izakaya, dine-in, takeout, Japanese" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="Nomu Izakaya" />
         <meta property="og:description" content="Come try our japanese food!" />
-        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+        <meta property="og:image" content="nomulogo.png" />
       </Helmet>
       {/* <div className="row-span-1 bg-purple-600 text-white flex items-center justify-center text-xl">
         Side Hero
@@ -83,7 +83,7 @@ function App() {
                 transition={{ duration: 3 }}
                 style={{transformStyle: "preserve-3d" }}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex flex-col items-center w-full h-[50vh] lg:w-3/4 md:h-[65vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
+                className="flex flex-col items-center w-full h-[60vh] lg:w-3/4 md:h-[75vh] space-y-6 max-w-7xl bg-neutral-800 text-center"
               >
                 <div className="text-6xl md:text-8xl font-kaisei text-gray-300 w-full mt-10 px-4">Our Mission</div>
                 {/* <div className="text-2xl max-w-3xl font-kaisei text-gray-300">
@@ -93,7 +93,7 @@ function App() {
                   Small plates, good company, and a welcoming vibe - turning every meal into a shared experience
                 </div>
                 <a 
-                  href="/menu.pdf" 
+                  href="/FoodMenu.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="group relative inline-block px-4 py-2 rounded-md text-3xl max-w-3xl font-kaisei text-gray-300 ml-auto mr-10"

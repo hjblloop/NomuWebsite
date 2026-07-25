@@ -1,13 +1,13 @@
 import React from 'react';
 
 const cards = [
-    {title: "Food Card", content: "Food Menu", y:0.5, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/menu.pdf'},
-    {title: "Drinks Card", content: "Drinks Menu", y:2, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/drinkMenu.pdf'},
-    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:1.5, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/kushiyakiMenu.pdf'},
-    // {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:1, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''},
+    {title: "Food Card", content: "Food Menu", y:0.5, imageSource:"/foodfloat1.jpg", imageAlt:"food", link:'/FoodMenu.pdf'},
+    {title: "Drinks Card", content: "Drinks Menu", y:2, imageSource:"/drinksfloat2.jpg", imageAlt:"drinks", link:'/DrinksMenu.pdf'},
+    {title: "Kushiyaki Card", content: "Kushiyaki Menu", y:1.5, imageSource:"kushiyakifloat2.jpg", imageAlt:"kushiyaki", link:'/KushiyakiMenu.png'},
+    {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:1, imageSource:"dasai.jpg", imageAlt:"happy hour", link:'/HappyHourMenu.pdf'},
 ];
 
-const kushiyaki = {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:1, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''}
+//const kushiyaki = {title: "Happy Hour Card", content: "Happy Hour \ncoming soon", y:1, imageSource:"dasai.jpg", imageAlt:"happy hour", link:''}
 
 const FloatingCards: React.FC = () => {
     return (
@@ -31,7 +31,7 @@ const FloatingCards: React.FC = () => {
                         </div>
                     </a>
                 ))}
-                <div
+                {/* <div
                         key="HappyHour"
                         style={{ 
                             marginTop: `${1}rem`,
@@ -43,7 +43,7 @@ const FloatingCards: React.FC = () => {
                             <img src={kushiyaki.imageSource} alt={kushiyaki.imageAlt} className="opacity-50 hover:opacity-100 transition duration-700 -z-10 absolute top-1/2 left-1/2 w-auto h-auto min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 rotate-0" />
                             <div className="absolute bottom-4 whitespace-pre-line text-red text-end">{kushiyaki.content}</div>
                         </div>
-                    </div>
+                    </div> */}
             </div>
         </div>
     );
