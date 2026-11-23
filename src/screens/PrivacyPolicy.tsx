@@ -42,13 +42,19 @@ export const PrivacyPolicy: React.FC = () => {
             <strong className="text-gray-900">Contact information.</strong> You may submit your name, email, phone number, and address to the App.
           </li>
           <li>
-            <strong className="text-gray-900">Orders and order history.</strong> The App collects and retains the orders you place via the App, including the items you order, date and time of the order, order amounts, delivery locations, tips, order frequency, favorite restaurant locations or menu items, and any preferences or selections you submit with your order.
+            <strong className="text-gray-900">Orders and order history.</strong> The App collects and retains the orders you place via the App,
+including the items you order, date and time of the order, order amounts, delivery locations,
+tips, order frequency, favorite restaurant locations or menu items, and any preferences or
+selections you submit with your order.
           </li>
           <li>
             <strong className="text-gray-900">Payment information.</strong> You may input your payment card information, including your card number, security code, and expiration date, or provide other payment information (such as Apple Pay or Google Pay).
           </li>
           <li>
-            <strong className="text-gray-900">Precise location.</strong> If you choose to enable it, the App will collect your precise location information to provide you with certain location-enabled features, such as to display and alert you to restaurants nearby and provide live map views. You can disable precise location at any time through your device settings.
+            <strong className="text-gray-900">Precise location.</strong> If you choose to enable it, the App will collect your precise location
+information to provide you with certain location-enabled features, such as to display and
+alert you to restaurants nearby and provide live map views. You can disable precise location
+at any time through your device settings.
           </li>
           <li>
             <strong className="text-gray-900">Rewards program and gift cards.</strong> If you participate in Merchant&rsquo;s rewards program or any other reward program supported by Merchant or the App, the App collects information about your rewards program status, including your points balance and redemptions. The App also collects information about any gift cards you receive or send, including the value of the card and balances.
@@ -261,9 +267,17 @@ export const PrivacyPolicy: React.FC = () => {
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Additional Purposes of Processing</h3>
         <p className="mb-2">Merchant may also use personal information collected through the App to:</p>
         <ul className="list-disc pl-6 space-y-1 mb-4">
-          <li>Analyze selections &amp; preferences to improve offerings and conduct market research.</li>
-          <li>Send marketing communications (email, text, advertising on third-party platforms).</li>
-          <li>Ensure compliance, enforce terms, defend against legal claims, and prevent fraud.</li>
+          <li>For compliance and protection, including to enforce any applicable terms and conditions,
+comply with legal obligations, defend against legal claims or disputes, protect the security and
+integrity of the App, and identify and investigate fraudulent, harmful, unauthorized, unethical or
+illegal activity.</li>
+          <li>To send you marketing communications outside the App (including by email, text message or
+other channels) and to advertise to you and others with similar interests on third-party
+websites and platforms; and</li>
+          <li>For compliance and protection, including to enforce any applicable terms and conditions,
+comply with legal obligations, defend against legal claims or disputes, protect the security and
+integrity of the App, and identify and investigate fraudulent, harmful, unauthorized, unethical or
+illegal activity.</li> 
         </ul>
 
         <h3 className="text-xl font-semibold text-gray-900 mb-2">Additional Disclosures of Personal Information</h3>
